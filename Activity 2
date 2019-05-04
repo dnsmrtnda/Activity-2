@@ -1,0 +1,92 @@
+// A program that accepts integer values for month, day, and year and then output the "long version" of the specified date.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	int month, date, year;
+
+	cout << "Enter month: (1-12)\n";
+	cin >> month; 
+	cout << "Enter day: (1-31)\n";
+	cin >> date;
+	cout << "Enter year: \n";
+	cin >> year;
+
+	if (month == 1)
+	{
+		cout << "January " << date << ", " << year << endl;
+	}
+
+	// Invalid date
+	else if (month == 2 && date > 28) 
+	{
+		cout << "Invalid Date!!";
+	}
+
+	else if (month == 2)
+	{
+ 		cout << "February " << date << ", " << year << endl;
+	}
+
+	else if (month == 3)
+	{
+ 		cout << "March " << date << ", " << year << endl;
+	}
+
+	else if (month == 4)
+	{
+ 		cout <<"April " << date << ", " << year << endl;
+	} 
+
+	else if (month == 5)
+	{
+ 		cout <<"May " << date << ", " << year << endl;
+	} 
+
+	else if (month == 6)
+	{
+ 		cout <<"June " << date << ", " << year << endl;
+	} 
+
+	else if (month == 7)
+	{
+ 		cout <<"July " << date << ", " << year << endl;
+	} 
+
+	else if (month == 8)
+	{
+ 		cout <<"August " << date << ", " << year << endl;
+	} 
+
+	else if (month == 9)
+	{
+ 		cout <<"September " << date << ", " << year << endl;
+	} 
+
+	else if (month == 10)
+	{
+ 		cout <<"October " << date << ", " << year << endl;
+	} 
+
+	else if (month == 11)
+	{
+ 		cout <<"November " << date << ", " << year << endl;
+	} 
+
+	else if (month == 12)
+	{
+ 		cout <<"December " << date << ", " << year << endl;
+	} 
+
+	// Standard date
+	else 
+	{
+		cout << month << "," << date << "," << year << endl;
+	}
+
+	return 0;
+
+}
